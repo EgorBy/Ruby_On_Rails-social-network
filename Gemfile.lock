@@ -65,11 +65,10 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ansi (1.5.0)
-    ast (2.4.2)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.598.0)
+    aws-partitions (1.593.0)
     aws-sdk-core (3.131.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -155,7 +154,7 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    msgpack (1.5.2)
+    msgpack (1.5.1)
     nenv (0.3.0)
     nio4r (2.5.8)
     nokogiri (1.13.6-x86_64-linux)
@@ -163,9 +162,6 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    parallel (1.22.1)
-    parser (3.1.2.0)
-      ast (~> 2.4.1)
     pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -174,7 +170,7 @@ GEM
     puma (5.3.1)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3.1)
+    rack (2.2.3)
     rack-mini-profiler (2.3.1)
       rack (>= 1.2.0)
     rack-proxy (0.7.2)
@@ -203,7 +199,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.3)
+    rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
     railties (6.1.4.6)
       actionpack (= 6.1.4.6)
@@ -211,24 +207,11 @@ GEM
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
-    rainbow (3.1.1)
     rake (13.0.6)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.5.0)
-    rexml (3.2.5)
-    rubocop (1.30.1)
-      parallel (~> 1.10)
-      parser (>= 3.1.0.0)
-      rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
-      rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.18.0, < 2.0)
-      ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.18.0)
-      parser (>= 3.1.1.0)
+    regexp_parser (2.4.0)
     ruby-progressbar (1.11.0)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
@@ -264,7 +247,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (2.1.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -288,6 +270,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  x86_64-darwin-19
   x86_64-linux
 
 DEPENDENCIES
@@ -313,7 +296,6 @@ DEPENDENCIES
   rack-mini-profiler (= 2.3.1)
   rails (= 6.1.4.6)
   rails-controller-testing (= 1.0.5)
-  rubocop
   sass-rails (= 6.0.0)
   selenium-webdriver (= 3.142.7)
   spring (= 2.1.1)
@@ -328,4 +310,4 @@ RUBY VERSION
    ruby 2.7.5p203
 
 BUNDLED WITH
-   2.3.15
+   2.2.31
