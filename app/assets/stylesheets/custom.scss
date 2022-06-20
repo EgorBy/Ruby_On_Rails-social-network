@@ -11,6 +11,17 @@ $gray-medium-light: #eaeaea;
           border-box;
 }
 
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
 /* miscellaneous */
 .debug_dump {
   clear: both;
@@ -28,18 +39,6 @@ body {
   color: white;
 }
 
-.container {
-  background-color: rgba(52, 99, 114, 0.25);
-  height: 100%;
-  position:relative;
-
-}
-
-.footer {
-    width: 98%;
-    position: absolute;
-    bottom: 0;
-}
 .jumbotron, {
   background-color: #222222;
   color: white;
