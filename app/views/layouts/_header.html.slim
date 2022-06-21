@@ -2,14 +2,7 @@ header.navbar.navbar-fixed-top.navbar-inverse
   .container
     = link_to "sample app", root_path, id: "logo"
     nav
-      .navbar-header
-        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
-          span.sr-only
-            | Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-      ul#bs-example-navbar-collapse-1.nav.navbar-nav.navbar-right.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
         li
           = link_to "Home", root_path
         li
@@ -19,16 +12,16 @@ header.navbar.navbar-fixed-top.navbar-inverse
             = link_to "Users", users_path
           li.dropdown
             a.dropdown-toggle[href="#" data-toggle="dropdown"]
-              |  Account
+              |  Account 
               b.caret
             ul.dropdown-menu
               li
                 = link_to "Profile", current_user
               li
-                = link_to "Settings", edit_user_path(current_user)
+                = link_to "Settings", '#'
               li.divider
               li
-                = link_to "Log out", logout_path, method: :delete
+                = link_to "Log out", logout_path, method: "delete"
         - else
           li
             = link_to "Log in", login_path
