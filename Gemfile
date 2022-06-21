@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.5'
 
+gem 'slim-rails'
 gem 'rails',                      '6.1.4.6'
 gem 'image_processing',           '1.9.3'
 gem 'mini_magick',                '4.9.5'
@@ -29,6 +30,7 @@ group :development do
   gem 'rack-mini-profiler', '2.3.1'
   gem 'listen',             '3.4.1'
   gem 'spring',             '2.1.1'
+  gem 'better_errors'
 end
 
 group :test do
@@ -46,6 +48,7 @@ group :production do
   gem 'pg',         '1.2.3'
   gem 'aws-sdk-s3', '1.87.0', require: false
 end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # Uncomment the following line if you're running Rails
